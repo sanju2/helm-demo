@@ -1,0 +1,12 @@
+appName: helm-demo
+
+namespace: default
+
+configmap:
+  name: helmappconfigmapv1.1
+  data: 
+    CUSTOM_HEADER: 'Happy helming!!'
+
+image:
+  name: lasanthasanjeewa/flask-demo-app
+  tag: v2
